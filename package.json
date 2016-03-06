@@ -1,0 +1,24 @@
+{
+  "name": "untitled2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack --progress --colors --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lkrol2/othello.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lkrol2/othello/issues"
+  },
+  "homepage": "https://github.com/lkrol2/othello#readme",
+  "dependencies": {
+    "jquery": "^2.2.1",
+    "webpack": "^1.12.14"
+  }
+}
