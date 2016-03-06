@@ -1,2 +1,5 @@
 node_modules/*
+!untitled2/src/node_module/*
+.tern-port/*
+npm-debug.log/*
 .idea/*

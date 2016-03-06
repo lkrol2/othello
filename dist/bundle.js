@@ -44,19 +44,40 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	document.write(__webpack_require__(1));
-	var $ = __webpack_require__(2);
+	    __webpack_require__(1)();
 
-	$('body').append($('<div id="app">'));
 
 /***/ },
 /* 1 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
 	/**
 	 * Created by liliana on 06.03.16.
 	 */
-	module.exports = "It works from lala content.js.";
+	var $ = __webpack_require__(2);
+
+	module.exports= function() {
+	    $(function () {
+	       var $container = $ ('<div id="app">');
+
+	        var table = $('<table>');
+	                var size = 8;
+
+	        for (var i = 0; i< size; i++){
+	        var $row = $('<tr>');
+
+	            for (var j = 0; j<size; j++){
+	            $row.append($cell);
+
+	        }
+	        $table.append($row);
+	    }
+	$container.append($table);
+	    $('body').append($container);
+	});
+	};
+
+
 
 /***/ },
 /* 2 */
